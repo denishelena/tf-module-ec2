@@ -11,6 +11,11 @@ variable "subnet_id" {
   default = "subnet-e0d9bb84"
 }
 
+
+variable "sg" {
+  type = list
+}
+
 variable "ebs_blocks" {
   type = list(object({
     device_name = string
